@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Order</title>
+</head>
+<body>
+    <!-- all of form -->
+    <div class="card">
+        <!-- top info -->
+        <div class="card--titlle">
+            <h1 class="card--titlle--info">
+                Christmas Fundraiser Dinner
+            </h1>
+            <p class="card--titlle-paragraph">
+                get your ticket for our annual Fundraiser dainner, hurry. we are in short supply!
+            </p>
+        </div>
+        <!-- line -->
+        <hr class="--line">
+            <!-- enter information -->
+            <div class="card--main">
+                <form action="" class="card--main--form">
+                    <!-- Name -->
+                    <div class="input--parent">
+                        <label for="first" class="form--guide">
+                            Name
+                            <span class="--text--red">
+                                *
+                            </span>
+                        </label>
+                        <div class="countainer--input">
+                            <div class="--first">
+                                <input type="text" id="first">
+                                <label for="first" class="--first--">
+                                    First
+                                </label>
+                            </div>
+                            <div class="--last">
+                                <input type="text" id="last" class="--last--">
+                                <label for="last">
+                                    Last
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="input--parent">
+                        <label for="--email" class="form--guide">
+                            Email
+                            <span class="--text--red">
+                                *
+                            </span>
+                        </label>
+                        <div class="countainer--input">
+                            <input type="email" id="--email">
+                        </div>
+                    </div>
+
+                    <!-- number -->
+                    <div class="input--parent">
+                        <label for="--number" class="form--guide">
+                            Phone
+                            <span class="--text--red">
+                                *
+                            </span>
+                        </label>
+                        <div class="countainer--input">
+                            <div class="--phone">
+                                <input type="text" inputmode="numeric" id="--###" maxlength="3">
+                                <label for="--###">
+                                    ###
+                                </label>
+                            </div>
+                            <span class="--midd--line">
+                                -
+                            </span>
+                            <div class="--phone">
+                                <input type="text" inputmode="numeric" id="--###-" maxlength="3"> 
+                                <label for="--###-">
+                                    ###
+                                </label>
+                            </div>
+                            <span class="--midd--line">
+                                -
+                            </span>
+                            <div class="--phone">
+                                <input type="text" inputmode="numeric" id="--####" maxlength="4">
+                                <label for="--####">
+                                    ####
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- terms -->
+                    <div class="input--parent">
+                        <label for="--term" class="form--guide">
+                            Terms
+                            <span class="--text--red">
+                                *
+                            </span>
+                        </label>
+                        <div class="countainer--input">
+                            <input type="checkbox" id="--term" required>
+                            <label for="--term">
+                                I accept the terms and counditions
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- quantity -->
+                    <div class="input--parent">
+                        <label for="--quantity" class="form--guide">
+                            Quantity
+                            <span class="--text--red">
+                                *
+                            </span>
+                        </label>
+                        <div class="countainer--input">
+                            <input type="checkbox" id="--quantity" required>
+                            <label for="--quantity">
+                                Dinner Ticket $30.00 USD
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- quantity check -->
+                    <div class="input--parent">
+                        <div class="countainer--input">
+                            <!-- <input type="text" inputmode="numeric" id="--quantity--check" maxlength="1" value="1"> -->
+                            <select name="" id="--quantity--check--select">
+                                <option value="num" selected>1</option>
+                                <option value="num">2</option>
+                                <option value="num">3</option>
+                                <option value="num">4</option>
+                                <option value="num">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- total -->
+                    <div class="input--parent">
+                        <div class="countainer--input price">
+                            <div class="--price">
+                                <p>Total</p>
+                                <p>$30.00</p>
+                            </div>
+                            <hr class="--line">
+                            <div class="--price">
+                                <p class="--order">1</p>
+                                <p class="--order">$30.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- submit -->
+                    <div class="input--parent">
+                        <div class="countainer--input submit">
+                            <input type="submit" id="--submit" value="PURCHASE">
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+</body>
+</html>

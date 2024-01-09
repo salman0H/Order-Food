@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../Images/BackGround-Food.jpg) no-repeat center top fixed;
+    background-size: cover;
+    font-family: 'argel' !important;
+}
+:root{
+    --text--red: rgb(187, 38, 38);
+    --text--card: rgb(255, 196, 147);
+    --text--input: rgb(207, 192, 183);
+    --num: rgb(70, 70, 70);
+}
+/* all of form */
+.card{
+    width: 600px;
+    height: 700px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.581), rgba(0, 0, 0, 0.641));
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* top info */
+.card--titlle{
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    padding: 30px 0px;
+    /* border: 2px solid white; */
+    color: var(--text--card);
+    margin: 0 auto;
+}
+
+.card--titlle-paragraph{
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 12px
+}
+
+/* line */
+.--line{
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px dotted var(--text--card);
+    display: block;
+}
+
+/* enter information */
+.card--main{
+    width: 80%;
+    height: 80%;
+    /* border: 2px solid white; */
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    color: var(--text--card);
+    position: relative;
+    font-family: sans-serif;
+}
+.input--parent{
+    width: 100%;
+    margin: 20px 0%;
+}
+.countainer--input{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    /* border: 2px solid white; */
+}
+.form--guide{
+    position: absolute;
+    left: 0%;
+    display: inline-block;
+}
+input{
+    border: 2px solid var(--text--card);
+    background-color: transparent;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: var(--text--input);
+    font-weight: lighter;
+    text-align: center;
+}
+.--text--red{
+    color: var(--text--red);
+}
+/* first name */
+.--first input, .--last input{
+    width: 98%;
+    height: 30px;
+}
+.--first label, .--last label{
+    text-align: center;
+    display: block;
+}
+
+/* email */
+#--email{
+    width: 100%;
+    height: 30px;
+}
+
+/* number */
+.--phone input{
+   width: 100%;
+   height: 30px;
+}
+.--midd--line{
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+/* term */
+#--term{
+    margin-right: 5px;
+}
+
+/* quantity */
+#--quantity{
+    margin-right: 5px;
+}
+
+/* quantity check */
+#--quantity--check--select{
+    width: 70px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--text--card);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: var(--text--card);
+}
+option{
+    color: var(--num);
+}
+
+/* price */
+.price{
+    width: 50%;
+    display: block;
+}
+.--price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.--order{
+    font-size: 12px;
+}
+
+/* submit */
+.submit{
+    justify-content: center;
+}
+#--submit{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: var(--text--red);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* font */
+@font-face {
+    font-family: 'argel';
+    src: url('../Fonts/NatureBeautyPersonalUse-9Y2DK.ttf');
+}
+
+/* responsive */
+@media (max-width: 630px) and (min-width: 450px) {
+    .card{
+        width: 450px;
+        height: 700px;
+        margin: 5px;
+    }
+    /* card titlle */
+    .card--titlle{
+        width: 100%;
+    }
+    .card--titlle--info{
+        font-size: 22px;
+    }
+}
+@media (max-width: 449px) {
+    .card{
+        width: 350px;
+        height: 800px;
+        margin: 5px;
+    }
+    /* card titlle */
+    .card--titlle{
+        width: 100%;
+    }
+    .card--titlle--info{
+        font-size: 18px;
+    }
+    input[type=text], input[type=number], input[type=email]{
+        width: 90%;
+    }
+    /* number */
+    .--phone{
+        flex-direction: column;
+    }
+    .--midd--line{
+        display: none;
+    }
+}
